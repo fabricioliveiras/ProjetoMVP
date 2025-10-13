@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #2AFF71;
+  --background-color: #1C1C1E;
+  --text-color: #e6e6ef;
+  --border-color: #2c303b;
+}
+
+body {
+    background: var(--background-color);
+}
+
+.wrapper {
+    width: 330px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    background-color: var(--border-color);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+h1 { 
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 1.2rem;
+}
+
+h2 img {
+    width: 30%;
+}
+.man {
+    color: gray;
+    width: 26%;
+}
+.health {
+    color: green;
+    width: 15%;
+}
+
+form input {
+    width: 92%;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e4e4e4;
+}
+
+button {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    width: 90%;
+    color: #fff;
+    cursor: pointer;
+    background: rgba(134,227,84,255);
+}
+button:hover {
+    background: rgba(166,247,119,255);
+}
+input:focus {
+    border: 1px solid rgb(192, 192, 192);
+}
+.member {
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    color: #636363;
+}
+.member a {
+    color: rgba(166,247,119,255);
+    text-decoration: none;
+}
+
+.recover {
+    text-align: right;
+    font-size: 0.7rem;
+    margin: 0.3rem 1.4rem 0 0;
+}
+
+.recover a {
+    text-decoration: none;
+    color: #636363;
+}
+span {
+    color: white;
+}
+
+.form {
+    background-color: 757575;
+}
+.icon i {
+    color: #87e576;
+    margin: 5px 2px 5px;
+    font-size: 25px;
+}
+
+.page {
+    color: #fff;
+    margin: 15px 15px 15px 15px;
+    font-size: 20px;
+}
+
+
+/*rgba(166,247,119,255)
+rgba(134,227,84,255)*/

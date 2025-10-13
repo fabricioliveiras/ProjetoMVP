@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <title>Editar Perfil | Man Health</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__header">
+                <i class='bx bx-check nav__icon-header'></i>
+                <span class="nav__title">EDITANDO PERFIL</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="edit-profile-section">
+            <div class="profile-avatar">
+                <div class="profile-photo" id="profilePhoto">
+                    <span>Nova<br>Foto</span>
+                    <input type="file" id="photoInput" accept="image/*" style="display: none;">
+                </div>
+                <button class="btn-change-photo" id="photoInput">Nova Foto</button>
+            </div>
+
+            <form class="edit-form" id="editarPerfilForm">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" id="editNome" placeholder="Nome Completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Idade</label>
+                    <input type="number" id="editIdade" placeholder="Idade" min="1" max="120" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Peso (kg)</label>
+                    <input type="number" id="editPeso" placeholder="Peso" min="1" max="300" step="0.1" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Altura (m)</label>
+                    <input type="number" id="editAltura" placeholder="Altura" min="0.5" max="2.5" step="0.01" required>
+                </div>
+
+                <button type="submit" class="btn-save">Salvar Alterações</button>
+                <button type="button" class="btn-cancel" onclick="window.location.href='perfil.html'">Cancelar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer-logo">
+        <img src="images/main-logo.png" alt="Man Health Logo" class="footer-logo-img">
+        <span class="footer-text">MAN<br>HEALTH</span>
+    </footer>
+
+    <nav class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="index.html" class="nav__link">
+                    <i class='bx bx-line-chart nav__icon'></i> 
+                    <span class="nav__name">Dados</span>
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a href="home.html" class="nav__link">
+                    <i class='bx bx-home-alt nav__icon'></i>
+                    <span class="nav__name">Home</span>
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a href="nutricao.html" class="nav__link">
+                   <i class='bx bx-restaurant nav__icon'></i> 
+                    <span class="nav__name">Nutrição</span>
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a href="perfil.html" class="nav__link active-link">
+                    <i class='bx bx-user nav__icon'></i>
+                    <span class="nav__name">Perfil</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <script src="js/auth.js"></script>
+    <script src="js/main-p.js"></script>
+    <script src="js/editar-perfil.js"></script>
+</body>
+</html>
+
