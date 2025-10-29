@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/man.css">
+    <title>Início | Man Health</title>
+    <link rel="shortcute icon" href="./images/main-logo.png">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__header">
+                <img src="images/main-logo.png" alt="Man Health Logo" class="nav__logo-img">
+                <span class="nav__title">MAN HEALTH</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content home-page">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Bem-vindo ao <span class="highlight">Man Health</span></h1>
+                <p class="hero-subtitle">Seu parceiro completo para saúde, fitness e bem-estar masculino</p>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class='bx bx-trending-up'></i>
+                    <span class="stat-number" id="diasAtivos">0</span>
+                    <span class="stat-label">Dias Ativos</span>
+                </div>
+                <div class="stat-item">
+                    <i class='bx bx-dumbbell'></i>
+                    <span class="stat-number" id="treinosCompletos">0</span>
+                    <span class="stat-label">Treinos</span>
+                </div>
+                <div class="stat-item">
+                    <i class='bx bx-trophy'></i>
+                    <span class="stat-number" id="metasAlcancadas">0</span>
+                    <span class="stat-label">Metas</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-actions">
+            <h2 class="section-title">Acesso Rápido</h2>
+            <div class="action-grid">
+                <a href="index.html" class="action-card">
+                    <div class="action-icon">
+                        <i class='bx bx-line-chart'></i>
+                    </div>
+                    <h3>Dashboard</h3>
+                    <p>Visualize suas métricas vitais</p>
+                </a>
+                
+                <a href="nutrition.html" class="action-card">
+                    <div class="action-icon">
+                        <i class='bx bx-restaurant'></i>
+                    </div>
+                    <h3>Nutrição</h3>
+                    <p>Registre suas refeições</p>
+                </a>
+                
+                <a href="#" class="action-card" onclick="alert('Funcionalidade em desenvolvimento!'); return false;">
+                    <div class="action-icon">
+                        <i class='bx bx-dumbbell'></i>
+                    </div>
+                    <h3>Treinos</h3>
+                    <p>Acesse seus planos de treino</p>
+                </a>
+                
+                <a href="perfil.html" class="action-card">
+                    <div class="action-icon">
+                        <i class='bx bx-user'></i>
+                    </div>
+                    <h3>Perfil</h3>
+                    <p>Gerencie suas informações</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="daily-tips">
+            <h2 class="section-title">Dica do Dia</h2>
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <i class='bx bx-bulb'></i>
+                </div>
+                <div class="tip-content">
+                    <h3 id="tipTitle">Hidratação é fundamental!</h3>
+                    <p id="tipDescription">Beba pelo menos 2 litros de água por dia para manter seu corpo funcionando perfeitamente. A hidratação adequada melhora o desempenho físico e mental.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="progress-overview">
+            <h2 class="section-title">Seu Progresso Semanal</h2>
+            <div class="progress-cards">
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <i class='bx bx-run'></i>
+                        <span>Atividade Física</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                    <span class="progress-text">75% da meta semanal</span>
+                </div>
+                
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <i class='bx bx-food-menu'></i>
+                        <span>Nutrição</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+                    <span class="progress-text">60% da meta semanal</span>
+                </div>
+                
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <i class='bx bx-moon'></i>
+                        <span>Sono</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                    <span class="progress-text">85% da meta semanal</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="motivational-section">
+            <div class="quote-card">
+                <i class='bx bxs-quote-alt-left quote-icon'></i>
+                <p class="quote-text">"O sucesso é a soma de pequenos esforços repetidos dia após dia."</p>
+                <span class="quote-author">- Robert Collier</span>
+            </div>
+        </section>
+    </main>
+
+    <nav class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="index.html" class="nav__link">
+                    <i class='bx bx-line-chart nav__icon'></i> 
+                    <span class="nav__name">Dados</span>
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a href="home.html" class="nav__link active-link">
+                    <i class='bx bx-home-alt nav__icon'></i>
+                    <span class="nav__name">Home</span>
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a href="nutrition.html" class="nav__link">
+                   <i class='bx bx-restaurant nav__icon'></i> 
+                    <span class="nav__name">Nutrição</span>
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a href="perfil.html" class="nav__link">
+                    <i class='bx bx-user nav__icon'></i>
+                    <span class="nav__name">Perfil</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

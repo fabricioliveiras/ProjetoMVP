@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Cadastro | Man Health</title>
+    <link rel="shortcute icon" href="./images/main-logo.png">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo-main">
+            <img src="images/main-logo.png" alt="Man Health Logo" class="logo">
+        </div>
+        <h1>Cadastro</h1>
+        <form id="cadastroForm">
+            <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            <input type="password" id="senha" name="senha" placeholder="Senha" minlength="6" required>
+            <button type="submit" class="btn-primary">CADASTRAR</button>
+        </form>
+        <div class="member">
+            Já foi para o gym? <a href="login.html">Realize Login!</a>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>
+
