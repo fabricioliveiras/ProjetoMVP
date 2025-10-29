@@ -1,0 +1,267 @@
+:root {
+  --header-height: 3.5rem;
+
+  --primary-color: #2AFF71;
+  --secondary-color: #86E354;
+  --background-color: #1C1C1E;
+  --card-background: #2c2c2e;
+  --text-color: #e6e6ef;
+  --text-secondary: #8e8e93;
+  --border-color: #3a3a3c;
+
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --tiny-font-size: .625rem;
+
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+.profile-section {
+  padding: 1rem 0;
+}
+
+.profile-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.avatar-circle {
+  width: 120px;
+  height: 120px;
+  background: var(--card-background);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  border: 3px solid var(--primary-color);
+}
+
+.avatar-emoji {
+  font-size: 4rem;
+}
+
+.btn-change-photo {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-change-photo:hover {
+  background: var(--primary-color);
+  color: var(--background-color);
+}
+
+.profile-info {
+  background: var(--card-background);
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+.info-card {
+  margin-bottom: 1.5rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-row label {
+  color: var(--text-secondary);
+  font-size: var(--normal-font-size);
+}
+
+.info-value {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.faq-section {
+  margin-bottom: 1.5rem;
+}
+
+.faq-item {
+  background: var(--background-color);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+}
+
+.btn-edit-profile {
+  width: 100%;
+  background: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  padding: 1rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-edit-profile:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(42, 255, 113, 0.3);
+}
+
+.edit-profile-section {
+  padding: 1rem 0;
+}
+
+.edit-form {
+  background: var(--card-background);
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: var(--text-secondary);
+  font-size: var(--small-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-size: var(--normal-font-size);
+  transition: all 0.3s ease;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #bdbdbd;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
+    transition: 0.2s;
+}
+
+.profile-photo:hover {
+    background-color: #2a2a2a;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(42, 255, 113, 0.2);
+}
+
+.btn-save {
+  width: 100%;
+  background: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  padding: 1rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-save:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(42, 255, 113, 0.3);
+}
+
+.btn-logout {
+  width: 100%;
+  background: transparent;
+  color: #ff3b30;
+  border: 2px solid #ff3b30;
+  padding: 1rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-logout:hover {
+  background: #ff3b30;
+  color: var(--text-color);
+  transform: translateY(-2px);
+}
+
+.btn-cancel {
+  width: 100%;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 2px solid var(--border-color);
+  padding: 1rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-cancel:hover {
+  border-color: var(--text-secondary);
+  color: var(--text-color);
+}
+
+.faq-answer {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-color);
+  font-size: var(--small-font-size);
+  color: var(--text-secondary);
+}
