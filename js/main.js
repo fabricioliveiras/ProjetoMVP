@@ -1,6 +1,3 @@
-// Man Health - Main JavaScript
-
-// Scroll Header Shadow
 function scrollHeader() {
     const header = document.getElementById('header');
     if (this.scrollY >= 50) {
@@ -11,7 +8,6 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader);
 
-// Active Link on Click
 const navLinks = document.querySelectorAll('.nav__link');
 
 function activeLink() {
@@ -21,7 +17,6 @@ function activeLink() {
 
 navLinks.forEach(link => link.addEventListener('click', activeLink));
 
-// Simple Chart Drawing for Activity Section
 function drawActivityChart() {
     const canvas = document.getElementById('activityChart');
     if (!canvas) return;
@@ -33,17 +28,14 @@ function drawActivityChart() {
     canvas.width = width;
     canvas.height = height;
     
-    // Sample data points
     const dataPoints = [30, 45, 60, 50, 75, 85, 80, 90, 95];
     const maxValue = Math.max(...dataPoints);
     const pointSpacing = width / (dataPoints.length - 1);
     
-    // Draw gradient background
     const gradient = ctx.createLinearGradient(0, 0, 0, height);
     gradient.addColorStop(0, 'rgba(42, 255, 113, 0.3)');
     gradient.addColorStop(1, 'rgba(42, 255, 113, 0.05)');
     
-    // Draw line path
     ctx.beginPath();
     ctx.moveTo(0, height);
     
@@ -63,7 +55,6 @@ function drawActivityChart() {
     ctx.fillStyle = gradient;
     ctx.fill();
     
-    // Draw line
     ctx.beginPath();
     dataPoints.forEach((point, index) => {
         const x = index * pointSpacing;
@@ -80,7 +71,6 @@ function drawActivityChart() {
     ctx.lineWidth = 3;
     ctx.stroke();
     
-    // Draw points
     dataPoints.forEach((point, index) => {
         const x = index * pointSpacing;
         const y = height - (point / maxValue) * height * 0.8;
@@ -92,17 +82,14 @@ function drawActivityChart() {
     });
 }
 
-// Initialize chart when page loads
 window.addEventListener('load', () => {
     drawActivityChart();
 });
 
-// Redraw chart on window resize
 window.addEventListener('resize', () => {
     drawActivityChart();
 });
 
-// Animate progress circles
 function animateProgressCircles() {
     const circles = document.querySelectorAll('.metric-circle');
     
@@ -118,10 +105,8 @@ function animateProgressCircles() {
     });
 }
 
-// Run animation on page load
 window.addEventListener('load', animateProgressCircles);
 
-// Form validation for login and register
 const forms = document.querySelectorAll('form');
 
 forms.forEach(form => {
@@ -145,7 +130,6 @@ forms.forEach(form => {
     });
 });
 
-// Add meal button interaction
 const addMealBtn = document.querySelector('.btn-add-meal');
 if (addMealBtn) {
     addMealBtn.addEventListener('click', () => {
@@ -153,7 +137,6 @@ if (addMealBtn) {
     });
 }
 
-// Meal card interaction
 const mealCards = document.querySelectorAll('.meal-card');
 mealCards.forEach(card => {
     card.addEventListener('click', () => {
